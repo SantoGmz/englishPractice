@@ -4,17 +4,7 @@ let botonNext = document.getElementById("btnNext");/* crear variable*/
 let pronouns = ["I", "You", "He", "She", "It", "We", "You", "They"]
 let possesive = ["My","Your","His","Her","Its","Our","Your","Their"]
 
-
-
-
-
 test()
-
-
-
-
-
-
 
 function test(){
     /*creo un numero aleatorio */
@@ -44,13 +34,12 @@ btnConfirm.addEventListener("click", function(){
 })
 /* evento para el boton de confirmar*/
 
-
 /*funcion para generar num automatico */
 function generate (min,max){
     return Math.round( Math.random() * (max - min) + min) ;
 }
 
 
-
-
-
+btnConfirm.addEventListener("keyup", e =>{
+    console.log("hola")
+})
