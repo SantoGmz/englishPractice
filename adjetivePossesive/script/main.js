@@ -24,12 +24,11 @@ btnConfirm.addEventListener("click", function(){
     let respuestaUser= document.getElementById("respuestaUsuario").value
     
     if(respuestaUser== possesive[num]){
-            console.log("Correcto!")
             test()   
             document.getElementById("respuestaUsuario").value=""
 
     }else{
-        console.log("incorrecto")
+        alert("Incorrect!")
     }
 })
 /* evento para el boton de confirmar*/
@@ -43,3 +42,6 @@ function generate (min,max){
 btnConfirm.addEventListener("keyup", e =>{
     console.log("hola")
 })
+
+
+alert("Adjetivos Posesivos, es sensicble a las letras, escribir its no es lo mismo que escribir Its")
