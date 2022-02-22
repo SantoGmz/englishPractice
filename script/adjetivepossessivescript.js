@@ -44,4 +44,17 @@ btnConfirm.addEventListener("keyup", e =>{
 })
 
 
-alert("Adjetivos Posesivos, es sensicble a las letras, escribir its no es lo mismo que escribir Its")
+//alert("Adjetivos Posesivos, es sensicble a las letras, escribir its no es lo mismo que escribir Its")
+ 
+
+//valor decimal de enter es 13
+$(function(){
+    
+    $( "#respuestaUsuario").keyup(function() {
+
+        if($(this).val()==13){
+            console.log("has escrito la palabra hola")
+
+        }
+      });
+})
