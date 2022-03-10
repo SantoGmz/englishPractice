@@ -1,14 +1,14 @@
 let botonNext = document.getElementById("btnNext");/* crear variable*/
 
     /* esto es el array para crear las preguntas*/
-let pronouns = ["I", "You", "He", "She", "It", "We", "You", "They"]
-let possesive = ["My","Your","His","Her","Its","Our","Your","Their"]
+let pronouns = ["Huge","Thin","Large" ]
+let possesive = ["Enorme","Delgado","Grande"]
 
 test()
 
 function test(){
     /*creo un numero aleatorio */
-    num = generate(0,7);
+    num = generate(0,2);
 
 
    /* con esto inserto en el html */
@@ -29,6 +29,7 @@ btnConfirm.addEventListener("click", function(){
 
     }else{
         alert("Incorrect!")
+        document.getElementById("respuestaUsuario").value=""
     }
 })
 /* evento para el boton de confirmar*/
