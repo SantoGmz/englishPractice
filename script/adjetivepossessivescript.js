@@ -48,13 +48,17 @@ btnConfirm.addEventListener("keyup", e =>{
  
 
 //valor decimal de enter es 13
-$(function(){
+let keyBoard = document.querySelector('.keyboard')
+keyBoard.addEventListener('keyup', e =>{
+    if(e.keyCode === 13 ){
+        let respuestaUser= document.getElementById("respuestaUsuario").value
     
-    $( "#respuestaUsuario").keyup(function() {
-
-        if($(this).val()==13){
-            console.log("has escrito la palabra hola")
-
+        if(respuestaUser== possesive[num]){
+                test()   
+                document.getElementById("respuestaUsuario").value=""
+    
+        }else{
+            alert("Incorrect!")
         }
-      });
+    }
 })
