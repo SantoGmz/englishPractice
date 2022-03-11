@@ -1,12 +1,9 @@
 let botonNext = document.getElementById("btnNext");/* crear variable*/
 
     /* esto es el array para crear las preguntas*/
-let pronouns = ["Huge","Thin","Large","Rich","Boring","Quick","Smart","Poor" ]//7
-let possesive = ["Enorme","Delgado","Grande","Rico","Aburrido","Rapido","Inteligente","Pobre"]//7
+let pronouns = ["Could","Beautiful","Poor","Clean","Interesting","Neat","Big","Good"]//7
+let possesive = ["Hot","Ugly","Rich","Dirty","Boring","Messy","Small","Bad"]//7
 
-    let test3 = pronouns
-    pronouns = possesive
-    possesive = test3
 test()
 
 function test(){
