@@ -24,12 +24,25 @@ btnConfirm.addEventListener("click", function(){
     let respuestaUser= document.getElementById("respuestaUsuario").value
     
     if(respuestaUser== possesive[num]){
-            test()   
-            document.getElementById("respuestaUsuario").value=""
+        test()   
+
+
+        //con esto doy nfasis en la palabra de negro para el boton confirm
+        $('#question').css({
+            'color': 'black'
+        });
+
+        document.getElementById("respuestaUsuario").value=""
 
     }else{
-        document.getElementById("respuestaUsuario").value=""
-        alert("Incorrect!")
+            //con esto doy nfasis en la palabra de rojo para el boton confirm
+            $('#question').css({
+                'color': 'red'
+            });
+
+            // para dejar limpio el input 
+            document.getElementById("respuestaUsuario").value=""
+            alert("Incorrect!")
     }
 })
 /* evento para el boton de confirmar*/
@@ -49,16 +62,26 @@ btnConfirm.addEventListener("keyup", e =>{
  
 
 //valor decimal de enter es 13
+//esto es para cuando teclee con la tecla enter
 let keyBoard = document.querySelector('.keyboard')
 keyBoard.addEventListener('keyup', e =>{
     if(e.keyCode === 13 ){
         let respuestaUser= document.getElementById("respuestaUsuario").value
     
         if(respuestaUser== possesive[num]){
-                test()   
+            test()   
+            //con esto doy nfasis en la palabra de negro para el evento de la letra enter
+            $('#question').css({
+                'color': 'black'
+            });
                 document.getElementById("respuestaUsuario").value=""
     
         }else{
+            //con esto doy nfasis en la palabra de rojo para el evento de la letra enter
+            $('#question').css({
+                'color': 'red'
+            });
+            document.getElementById("respuestaUsuario").value=""
             alert("Incorrect!")
             
         }
