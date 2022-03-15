@@ -2,22 +2,22 @@ let botonNext = document.getElementById("btnNext");/* crear variable*/
 
     /* esto es el array para crear las preguntas*/
 let pronouns = [
-                "tall",
-                "big",
-                "happy",
-                "Safe",
+                "tall",//1
+                "big",//2
+                "happy",//3
+                "Safe",//4
                 "Confortable",//5
-                "Huge",
-                "Near",
-                "Funny",
-                "Beautiful",
+                "Huge",//6
+                "Near",//7
+                "Funny",//8
+                "Beautiful",//9
                 "Attractive",//10
-                "Good",
-                "Cold",
-                "Rich",
-                "Expensive",
+                "Good",//11
+                "Cold",//12
+                "Rich",//13
+                "Expensive",//14
                 "Neat",//15
-                "Polite"
+                "Polite"//16
             ]//7
 
                 let possesive = [
@@ -46,7 +46,7 @@ test()
 
 function test(){
     /*creo un numero aleatorio */
-    num = generate(0,7);
+    num = generate(0,15);
 
 
    /* con esto inserto en el html */
